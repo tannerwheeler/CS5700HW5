@@ -1,6 +1,6 @@
 package floatingPointVerifier
 
-class StartFloatingPoint: FloatingPointState {
+class BeginFloatingPoint: FloatingPointState {
     override fun consumeCharacter(char: String, floatingPointVerifier: FloatingPointVerifier) {
         if (char in "123456789") {
             floatingPointVerifier.state = Digits()
