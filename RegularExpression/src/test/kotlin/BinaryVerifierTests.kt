@@ -2,7 +2,7 @@ import binaryVerifier.BinaryVerifier
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-class TestBinaryVerifier {
+class BinaryVerifierTests {
     private val verifier = BinaryVerifier()
 
     @Test
