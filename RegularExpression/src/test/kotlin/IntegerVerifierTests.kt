@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 class IntegerVerifierTests {
-    val verifier = IntegerVerifier()
+    private val verifier = IntegerVerifier()
 
     @Test
     fun testIntegerVerifierTrue() {
