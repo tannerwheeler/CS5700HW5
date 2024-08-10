@@ -1,56 +1,145 @@
-<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>585</x><y>0</y><w>171</w><h>63</h></coordinates><panel_attributes>Verifier
+<diagram program="umletino" version="15.1"><zoom_level>6</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>528</x><y>42</y><w>114</w><h>42</h></coordinates><panel_attributes>Verifier
 --
 
 --
-+ verify(string: String): Boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>144</y><w>135</w><h>72</h></coordinates><panel_attributes>PasswordVerifier
++ verify(string: String): Boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>228</x><y>186</y><w>90</w><h>48</h></coordinates><panel_attributes>PasswordVerifier
 --
 + state: PasswordState
-+ capital: SubState
-+ special: SubState</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1026</x><y>144</y><w>135</w><h>72</h></coordinates><panel_attributes>BinaryVerifier
++ capital: PasswordState
++ special: PasswordState
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>186</y><w>90</w><h>48</h></coordinates><panel_attributes>BinaryVerifier
 --
-+ state: BinaryState</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>846</x><y>144</y><w>135</w><h>72</h></coordinates><panel_attributes>EmailVerifier
++ state: BinaryState
+group=group-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>714</x><y>186</y><w>90</w><h>48</h></coordinates><panel_attributes>EmailVerifier
 --
-+ state: EmailState</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>666</x><y>144</y><w>135</w><h>72</h></coordinates><panel_attributes>FloatingPointVerifier
++ state: EmailState
+group=group-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>558</x><y>186</y><w>90</w><h>48</h></coordinates><panel_attributes>FloatingPointVerifier
 --
 + state: FloatingPointState
 
 style=wordwrap
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>459</x><y>144</y><w>135</w><h>72</h></coordinates><panel_attributes>IntegerVerifier
+
+group=group-3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>396</x><y>186</y><w>90</w><h>48</h></coordinates><panel_attributes>IntegerVerifier
 --
-+ state: IntegerState</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>315</x><y>54</y><w>369</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>390;10;390;50;10;50;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>657</x><y>54</y><w>459</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50;490;50;490;100</additional_attributes></element><element><id>Relation</id><coordinates><x>657</x><y>54</y><w>279</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50;290;50;290;100</additional_attributes></element><element><id>Relation</id><coordinates><x>657</x><y>54</y><w>99</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50;90;50;90;100</additional_attributes></element><element><id>Relation</id><coordinates><x>513</x><y>54</y><w>171</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>170;10;170;50;10;50;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1017</x><y>315</y><w>153</w><h>72</h></coordinates><panel_attributes>BinaryState
++ state: IntegerState
+group=group-4</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>264</x><y>78</y><w>330</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>530;10;530;50;10;50;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>78</y><w>354</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50;570;50;570;180</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>78</y><w>198</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50;310;50;310;180</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>78</y><w>42</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50;50;50;50;180</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>78</y><w>162</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>250;10;250;50;10;50;10;180</additional_attributes></element><element><id>UMLClass</id><coordinates><x>864</x><y>300</y><w>102</w><h>48</h></coordinates><panel_attributes>BinaryState
 --
 + consumeCharacter(char: String, binaryVerifier: BinaryVerifier)
 
 style=wordwrap
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>837</x><y>315</y><w>153</w><h>72</h></coordinates><panel_attributes>EmailState
+
+group=group-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>708</x><y>300</y><w>102</w><h>48</h></coordinates><panel_attributes>EmailState
 --
 + consumeCharacter(char: String, emailVerifier: EmailVerifier)
 
 style=wordwrap
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>657</x><y>315</y><w>153</w><h>90</h></coordinates><panel_attributes>FloatingPointVerifier
+
+group=group-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>552</x><y>300</y><w>102</w><h>60</h></coordinates><panel_attributes>FloatingPointVerifier
 --
 + consumeCharacter(char: String, floatingPointVerifier: FloatingPointVerifier)
 
 style=wordwrap
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>315</y><w>153</w><h>72</h></coordinates><panel_attributes>IntegerState
+
+group=group-3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>300</y><w>102</w><h>48</h></coordinates><panel_attributes>IntegerState
 --
 + consumeCharacter(char: String, integerVerifier: IntegerVerifier)
 
 style=wordwrap
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>261</x><y>315</y><w>153</w><h>72</h></coordinates><panel_attributes>PasswordState
+
+group=group-4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>300</y><w>102</w><h>48</h></coordinates><panel_attributes>PasswordState
 --
 + consumeCharacter(char: String, passwordVerifier: PasswordVerifier)
 
 style=wordwrap
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>54</x><y>315</y><w>153</w><h>72</h></coordinates><panel_attributes>SubState
---
-+ consumeCharacter(char: String, passwordVerifier: PasswordVerifier)
 
-style=wordwrap
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>324</x><y>207</y><w>36</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=1</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>207</y><w>234</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=0..*</panel_attributes><additional_attributes>240;10;240;70;10;70;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>513</x><y>207</y><w>36</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=1</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>207</y><w>36</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=1</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>207</y><w>36</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=1</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>1080</x><y>207</y><w>36</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=1</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element></diagram>
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>264</x><y>228</y><w>30</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=0..*
+group=group-5</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>228</y><w>24</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1
+group=group-4</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>594</x><y>228</y><w>24</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1
+group=group-3</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>228</y><w>24</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1
+group=group-2</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>906</x><y>228</y><w>24</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1
+group=group-1</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>378</y><w>60</w><h>18</h></coordinates><panel_attributes>StartPassword
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>798</y><w>60</w><h>18</h></coordinates><panel_attributes>ValidPassword
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>768</y><w>60</w><h>18</h></coordinates><panel_attributes>ValidSpecial
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>738</y><w>60</w><h>18</h></coordinates><panel_attributes>ValidCaptial
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>708</y><w>60</w><h>18</h></coordinates><panel_attributes>Special
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>678</y><w>72</w><h>18</h></coordinates><panel_attributes>NotValidSubStates
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>648</y><w>60</w><h>18</h></coordinates><panel_attributes>NoSpecial
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>618</y><w>60</w><h>18</h></coordinates><panel_attributes>NoCapital
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>588</y><w>60</w><h>18</h></coordinates><panel_attributes>Seven
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>558</y><w>60</w><h>18</h></coordinates><panel_attributes>Six
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>528</y><w>60</w><h>18</h></coordinates><panel_attributes>Five
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>498</y><w>60</w><h>18</h></coordinates><panel_attributes>Four
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>468</y><w>60</w><h>18</h></coordinates><panel_attributes>Three
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>438</y><w>60</w><h>18</h></coordinates><panel_attributes>Two
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>222</x><y>408</y><w>60</w><h>18</h></coordinates><panel_attributes>One
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;70;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;130;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;170;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;220;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>174</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;270;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>204</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;320;10;320</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>234</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;370;10;370</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>264</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;420;10;420</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>294</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;470;10;470</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>324</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;520;10;520</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>354</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;570;10;570</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>384</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;620;10;620</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>414</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;670;10;670</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>444</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;720;10;720</additional_attributes></element><element><id>Relation</id><coordinates><x>276</x><y>342</y><w>42</w><h>474</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-5</panel_attributes><additional_attributes>50;10;50;770;10;770</additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>378</y><w>60</w><h>18</h></coordinates><panel_attributes>FirstDigit
+group=group-4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>438</y><w>60</w><h>18</h></coordinates><panel_attributes>InvalidInteger
+group=group-4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>408</y><w>60</w><h>18</h></coordinates><panel_attributes>ValidInteger
+group=group-4</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>444</x><y>342</y><w>42</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-4</panel_attributes><additional_attributes>50;10;50;70;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>444</x><y>342</y><w>42</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-4</panel_attributes><additional_attributes>50;10;50;130;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>444</x><y>342</y><w>42</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-4</panel_attributes><additional_attributes>50;10;50;170;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>534</x><y>390</y><w>78</w><h>18</h></coordinates><panel_attributes>BeginFloatingPoing
+group=group-3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>552</x><y>540</y><w>60</w><h>18</h></coordinates><panel_attributes>Zero
+group=group-3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>510</y><w>72</w><h>18</h></coordinates><panel_attributes>ValidFloatingPoint
+group=group-3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>552</x><y>480</y><w>60</w><h>18</h></coordinates><panel_attributes>Point
+group=group-3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>534</x><y>450</y><w>78</w><h>18</h></coordinates><panel_attributes>InvalidFloatingPoint
+group=group-3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>552</x><y>420</y><w>60</w><h>18</h></coordinates><panel_attributes>Digits
+group=group-3</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>606</x><y>354</y><w>42</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-3</panel_attributes><additional_attributes>50;10;50;70;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>606</x><y>354</y><w>42</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-3</panel_attributes><additional_attributes>50;10;50;130;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>606</x><y>354</y><w>42</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-3</panel_attributes><additional_attributes>50;10;50;170;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>606</x><y>354</y><w>42</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-3</panel_attributes><additional_attributes>50;10;50;220;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>606</x><y>354</y><w>42</w><h>174</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-3</panel_attributes><additional_attributes>50;10;50;270;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>606</x><y>354</y><w>42</w><h>204</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-3</panel_attributes><additional_attributes>50;10;50;320;10;320</additional_attributes></element><element><id>UMLClass</id><coordinates><x>708</x><y>378</y><w>60</w><h>18</h></coordinates><panel_attributes>StartEmail
+group=group-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>708</x><y>558</y><w>60</w><h>18</h></coordinates><panel_attributes>ValidEmail
+group=group-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>708</x><y>528</y><w>60</w><h>18</h></coordinates><panel_attributes>Period
+group=group-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>708</x><y>498</y><w>60</w><h>18</h></coordinates><panel_attributes>PartTwo
+group=group-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>708</x><y>468</y><w>60</w><h>18</h></coordinates><panel_attributes>PartOne
+group=group-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>708</x><y>438</y><w>60</w><h>18</h></coordinates><panel_attributes>InvalidEmail
+group=group-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>708</x><y>408</y><w>60</w><h>18</h></coordinates><panel_attributes>AtSymbol
+group=group-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>762</x><y>342</y><w>42</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-2</panel_attributes><additional_attributes>50;10;50;70;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>762</x><y>342</y><w>42</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-2</panel_attributes><additional_attributes>50;10;50;130;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>762</x><y>342</y><w>42</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-2</panel_attributes><additional_attributes>50;10;50;170;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>762</x><y>342</y><w>42</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-2</panel_attributes><additional_attributes>50;10;50;220;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>762</x><y>342</y><w>42</w><h>174</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-2</panel_attributes><additional_attributes>50;10;50;270;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>762</x><y>342</y><w>42</w><h>204</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-2</panel_attributes><additional_attributes>50;10;50;320;10;320</additional_attributes></element><element><id>Relation</id><coordinates><x>762</x><y>342</y><w>42</w><h>234</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-2</panel_attributes><additional_attributes>50;10;50;370;10;370</additional_attributes></element><element><id>UMLClass</id><coordinates><x>864</x><y>378</y><w>60</w><h>18</h></coordinates><panel_attributes>StartBinary
+group=group-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>864</x><y>468</y><w>60</w><h>18</h></coordinates><panel_attributes>Zero
+group=group-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>864</x><y>438</y><w>60</w><h>18</h></coordinates><panel_attributes>ValidBinary
+group=group-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>864</x><y>408</y><w>60</w><h>18</h></coordinates><panel_attributes>InvalidBinary
+group=group-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>918</x><y>342</y><w>42</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-1</panel_attributes><additional_attributes>50;10;50;70;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>918</x><y>342</y><w>42</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-1</panel_attributes><additional_attributes>50;10;50;130;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>918</x><y>342</y><w>42</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-1</panel_attributes><additional_attributes>50;10;50;170;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>918</x><y>342</y><w>42</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;.
+group=group-1</panel_attributes><additional_attributes>50;10;50;220;10;220</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>204</x><y>138</y><w>132</w><h>696</h></coordinates><panel_attributes>passwordVerifier
+--
+group=group-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>372</x><y>138</y><w>132</w><h>336</h></coordinates><panel_attributes>integerVerifier
+--
+group=group-4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>528</x><y>138</y><w>138</w><h>432</h></coordinates><panel_attributes>floatingPointVerifier
+--
+group=group-3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>690</x><y>138</y><w>132</w><h>450</h></coordinates><panel_attributes>emailVerifier
+--
+group=group-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>846</x><y>138</y><w>132</w><h>360</h></coordinates><panel_attributes>binaryVerifier
+--
+group=group-1</panel_attributes><additional_attributes></additional_attributes></element></diagram>
