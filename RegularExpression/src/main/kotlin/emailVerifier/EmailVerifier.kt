@@ -1,9 +1,11 @@
 package emailVerifier
 
-class EmailVerifier {
+import Verifier
+
+class EmailVerifier: Verifier {
     lateinit var state: EmailState
 
-    fun verify(string: String): Boolean {
+    override fun verify(string: String): Boolean {
         state = StartEmail()
 
         string.forEach {

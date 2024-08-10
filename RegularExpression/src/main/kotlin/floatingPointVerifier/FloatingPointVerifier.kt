@@ -1,9 +1,11 @@
 package floatingPointVerifier
 
-class FloatingPointVerifier {
+import Verifier
+
+class FloatingPointVerifier: Verifier {
     lateinit var state: FloatingPointState
 
-    fun verify(string: String): Boolean {
+    override fun verify(string: String): Boolean {
         state = BeginFloatingPoint()
 
         string.forEach {
