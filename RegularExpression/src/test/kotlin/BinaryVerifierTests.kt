@@ -21,5 +21,9 @@ class BinaryVerifierTests {
         assertEquals(false, verifier.verify("10"))
         assertEquals(false, verifier.verify("1000010"))
         assertEquals(false, verifier.verify("100a01"))
+        assertEquals(false, verifier.verify("101a"))
+        assertEquals(false, verifier.verify("10c"))
+        assertEquals(false, verifier.verify("101$"))
+        assertEquals(false, verifier.verify("10@GGGG"))
     }
 }

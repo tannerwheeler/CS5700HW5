@@ -4,10 +4,10 @@ import Verifier
 
 class PasswordVerifier: Verifier {
     lateinit var state: PasswordState
-    lateinit var capital: SubState
-    lateinit var special: SubState
+    lateinit var capital: PasswordState
+    lateinit var special: PasswordState
 
-    val specials : String = "!@#\$%&*"
+    val specials : String = "(!@#\$%&*)"
 
     override fun verify(string: String): Boolean {
         state = StartPassword()
@@ -17,8 +17,6 @@ class PasswordVerifier: Verifier {
         string.forEach {
             state.consumeCharacter(it.toString(), this)
         }
-        return (state is ValidPassword &&
-                capital is ValidCapital &&
-                special is ValidSpecial)
+        return state is ValidPassword
     }
 }
